@@ -1,5 +1,13 @@
-/* 
-body{
-  font-family: 'TT-hoves';
-  font-size: 50px;
-} */
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: TT-Hoves, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #2e2d2b;
+  background-color: #f5efe6;
+  text-align: center;
+  overflow: hidden;
+}

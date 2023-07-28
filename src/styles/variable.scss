@@ -1,4 +1,26 @@
-$main-background-color:#f5efe6;
-$dark-background-color:#5e5043;
-$itc-font:ITC, sans-serif;
-$hoves-font:TT-Hoves-Trial-Medium, serif;
+$main-background-color: #f5efe6;
+$dark-background-color: #5e5043;
+$dull-white-text-color: #e5e0d7;
+$black-ng-btn:#2e2d2b;
+$dull-black:rgba(46,45,43,.61);
+
+$itc-font: ITC, sans-serif;
+$hoves-font: TT-Hoves-Trial-Medium, sans-serif;
+
+@mixin heading1() {
+  letter-spacing: -0.01em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $itc-font;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+@mixin heading-description() {
+  padding-left: 3px;
+  font-weight: 600;
+  line-height: 1.6em;
+  margin-top: 12px;
+  font-family: $hoves-font;
+}
