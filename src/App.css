@@ -9,5 +9,5 @@ body {
   color: #2e2d2b;
   background-color: #f5efe6;
   text-align: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
