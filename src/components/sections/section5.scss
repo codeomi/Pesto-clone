@@ -1,0 +1,51 @@
+@import "../../styles/variable.scss";
+
+.section5{
+    padding-top:150px;
+    padding-bottom:100px;
+}
+
+.section5-container{
+    z-index: 2;
+    width: 90%;
+    max-width: 1280px;
+    transform-style: preserve-3d;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border: 10px solid #fffaf2;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 10% 60px 4%;
+}
+
+
+.header-description-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 40%;
+}
+
+.header-container{
+    @include heading2();
+}
+
+.description-container{
+    opacity: 1;
+    margin-top: 12px;
+    margin-bottom: 42px;
+    padding-left: 3px;
+    font-weight: 500;
+    line-height: 1.6em;
+    text-align: start;
+}
+
+.section5-button{
+    @include black-btn();
+   
+    width: 200px;
+}
