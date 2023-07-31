@@ -1,6 +1,7 @@
 import React from "react";
 import "./section4.scss";
 import { ArrowForward ,ArrowBackIos} from "@mui/icons-material";
+import Section4Card from "../../cards/Section4Card.js";
 
 const Section4 = () => {
   return (
@@ -29,7 +30,11 @@ const Section4 = () => {
               <ArrowForward id="section4-arrow-btn"></ArrowForward>
             </div>
           </div>
-          <div className="cards-container"></div>
+          <div className="section4-cards-container">
+          <Section4Card></Section4Card>
+          <Section4Card></Section4Card>
+          <Section4Card></Section4Card>
+          </div>
         </div>
       </div>
     </>
