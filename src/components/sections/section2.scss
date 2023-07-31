@@ -1,0 +1,60 @@
+@import "../../styles/variable.scss";
+
+.section2 {
+  padding-top: 120px;
+  padding-bottom: 50px;
+}
+.section2-container{
+    width: 100%;
+    max-width: 80vw;
+}
+
+.section2-container-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  grid-template-areas: 
+  "1 2"; 
+}
+
+.what-is-container {
+  grid-area: "1";
+
+  text-align: start;
+  padding: 200px 0;
+  
+}
+
+.section2-heading-container{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.section2-heading{
+    @include heading2();
+    width: 300px;
+    color: $black-dull-heading-text-color;
+}
+
+.section2-description{
+    @include heading-description2();
+    width: 375px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: $black-dull-para-text-color;
+}
+
+.section2-button{
+    @include black-btn();
+    width: 200px;
+}
+
+.scroller{
+    grid-area:"2";
+    background-color: aqua;
+
+}
