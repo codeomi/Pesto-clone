@@ -12,6 +12,8 @@ const Section5 = () => {
               src="https://global-uploads.webflow.com/637495e24e982a81f63e724a/63f1c0db0314aa1ef3300d08_ssds-s.webp"
               alt=""
             />
+            <div className="blur-up"></div>
+            <div className="blur-down"></div>
           </div>
           <div className="section5-header-description-container">
             <div className="header-description-container">
@@ -22,9 +24,9 @@ const Section5 = () => {
                 alias quasi.
               </div>
               <div className="section5-button animation-button" type="button">
-                  <span>Become a Fellow</span>
-                  <ArrowForward id="arrow-id"></ArrowForward>
-                </div>
+                <span>Become a Fellow</span>
+                <ArrowForward id="arrow-id"></ArrowForward>
+              </div>
             </div>
           </div>
         </div>

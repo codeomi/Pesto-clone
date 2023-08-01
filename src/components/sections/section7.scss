@@ -1,0 +1,35 @@
+@import "../../styles/variable.scss";
+
+.section7{
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.section7-container{
+    max-width: 800px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section7-heading-2{
+    @include heading2();
+    margin-bottom: 30px
+}
+
+.section7-description{
+    @include heading-description2();
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+.section7-button{
+    @include black-btn();
+    width: 200px;
+    
+    margin:50px auto;
+}
