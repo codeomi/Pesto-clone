@@ -33,3 +33,13 @@
     @include heading2();
     
 }
+
+
+.section8-card-wrapper{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
