@@ -7,6 +7,7 @@ import Section4 from "./sections/Section4.js";
 import Section5 from "./sections/Section5.js";
 import Section6 from "./sections/Section6.js";
 import Section7 from "./sections/Section7.js";
+import Section8 from "./sections/Section8.js";
 
 function Dashboard() {
   return (
@@ -19,6 +20,7 @@ function Dashboard() {
         <Section5 />
         <Section6 />
         <Section7 />
+        <Section8 />
       </div>
     </>
   );
