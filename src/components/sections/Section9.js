@@ -6,7 +6,6 @@ import profile3Img from "../../assets/profile/profile-3.webp";
 import profile4Img from "../../assets/profile/profile-4.webp";
 import v1Image from "../../assets/profile/video-img-1.webp";
 import v2Image from "../../assets/icons/63da5c38be1160412c5f9a23_FneHpr6aUAArGQZ-p-500.webp";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import playBtn from "../../assets/icons/play-btn.svg";
 
 const Section9 = () => {
