@@ -212,3 +212,20 @@ svg {
   text-align: start;
   align-items: start;
 }
+
+
+@media only screen and (min-width: 1024px) {
+  .section1-form-container {
+    max-width: 600px; /* Adjust the max-width for larger screens */
+    padding: 40px; /* Adjust the padding for larger screens */
+    bottom: -40%; /* Adjust the vertical position for larger screens */
+  }
+
+  input {
+    max-width: 40%; /* Adjust the input field width for larger screens */
+    font-size: 16px; /* Increase the font size for larger screens */
+  }
+
+
+  /* ... (add any additional styles or overrides for laptop view) ... */
+}
