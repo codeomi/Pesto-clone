@@ -1,0 +1,129 @@
+.section4-card {
+  display: flex;
+  flex-direction: row;
+  height: 526px;
+  overflow: visible;
+  z-index: 1;
+  white-space: nowrap;
+  position: relative;
+  left: 0;
+  right: 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 1040px;
+  height: 526px;
+  background-color: #fffaf2;
+  border: 1px solid #fff;
+  border-radius: 24px;
+  align-items: center;
+  padding-left: 10px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 7px 7px 30px -10px rgba(61, 59, 56, 0.05), 21px 21px 60px -10px rgba(61, 59, 56, 0.05);
+  margin: 100px 20px;
+}
+
+.section4-1 {
+  width: 516px;
+  height: 506px;
+  background-color: #f5efe6;
+  border-radius: 16px;
+  flex: none;
+}
+
+.section4-card-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  border: 5px #e5e0d7;
+  border-radius: 12px;
+  display: inline-block;
+  aspect-ratio: auto 1024/1024;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.section4-2 {
+  text-align: start;
+  padding: 60px 54px;
+  display: block;
+  position: relative;
+}
+
+.section4-card-heading {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.6em;
+}
+
+.section4-card-description-container {
+  width: 376px;
+  align-items: center;
+  margin-left: 15px;
+  display: flex;
+}
+
+.line-container {
+  width: 1px;
+  background-color: rgba(168, 141, 118, 0.57);
+  flex: none;
+  align-self: stretch;
+  margin-top: 22px;
+  margin-bottom: 22px;
+  margin-right: -25px;
+}
+
+.bullet-points-description-container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2px;
+}
+
+.bullet-point-container {
+  display: flex;
+  grid-column-gap: 12px;
+  align-items: flex-start;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 400px;
+}
+
+.bullet-point {
+  width: 30px;
+  height: 30px;
+  background-image: radial-gradient(circle farthest-side, #f7e6ca 65%, rgba(255, 255, 255, 0));
+  flex: none;
+  padding: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  display: flex;
+}
+
+.bullet-circle {
+  width: 15px;
+  height: 15px;
+  background-color: rgba(237, 179, 129, 0.722);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: top;
+  display: flex;
+  margin: auto;
+}
+
+.bullet-point-description {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: TT-Hoves-Trial-Medium, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.6em;
+  width: 100%;
+  color: rgba(65, 50, 37, 0.439);
+  overflow: hidden;
+}/*# sourceMappingURL=section4card.css.map */

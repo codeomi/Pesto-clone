@@ -1,0 +1,120 @@
+@import "../styles/variable.scss";
+
+.review-card {
+  width: 500px;
+  height: 100%;
+  margin-right: 24px;
+//   transform: translateX(-1048px);
+//   opacity: 1;
+//   transition: transform 500ms ease 0s;
+}
+
+
+
+.review-card-profile{
+    align-items: center;
+    margin-bottom: 24px;
+    margin-left: 12px;
+    display: flex;
+}
+
+.review-card-profile>img{
+    max-width: 66px;
+    height: 66px;
+    background-color: rgba(255,255,255,.1);
+    background-image: url(https://global-uploads.webflow.com/637495e…/63da707…_10954454.webp);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 110% 110%;
+    border-radius: 18px;
+    margin-right: 18px;
+    overflow: hidden;
+}
+
+.profile-name{
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.profile-designation{
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.review-container{
+    width: 100%;
+    background-color: #2e2d2b;
+    border-radius: 18px;
+    // flex: 1;
+    // order: 1;
+    // align-self: auto;
+    padding: 10px 10px 24px;
+    position: relative;
+}
+
+.review-container-1{
+    grid-column-gap: 60px;
+    background-color: #1f1e1d;
+    border-radius: 12px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 46px 30px 36px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+}
+
+.review-container-1-2{
+    display: flex;
+    flex-direction: row;
+}
+
+.amount{
+    margin-right: 12px;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.salary-hike-text{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.6em;
+    text-align: start;
+    width: 60px;
+}
+
+.review-container-2-1{
+    margin: 40px 21px 12px 24px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6em;
+    text-align: start;
+}
+
+.review-container-2-1-1{
+    width: 84%;
+    margin-bottom: 36px;
+    margin-left: 24px;
+    margin-right: 24px;
+    font-size: 15px;
+    line-height: 1.6em;
+    text-align: start;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top: 0 solid #fff;
+    border-bottom-color: #2e2d2b;
+    margin-top: -10px;
+    margin-left: -10px;
+    position: absolute;
+    top: 0%;
+    bottom: auto;
+    left: 50px;
+    right: auto;
+}
