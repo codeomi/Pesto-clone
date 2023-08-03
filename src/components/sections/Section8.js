@@ -19,7 +19,7 @@ const Section8 = () => {
           <div className="section8-card-wrapper">
             <div className="s8-blur-left"></div>
             <div className="s8-blur-right"></div>
-          <Carousel showThumbs={true} swipeable={true} autoPlay={true} interval={2000} useKeyboardArrows={true} showArrows={true} infiniteLoop={true} centerMode={true} autoFocus={true} centerSlidePercentage={40} showStatus={false}  >
+          <Carousel height={50} showThumbs={true} swipeable={true} autoPlay={true} interval={2000} useKeyboardArrows={true} showArrows={true} infiniteLoop={true} centerMode={true} autoFocus={true} centerSlidePercentage={40} showStatus={false}  >
             <ReviewCard></ReviewCard>
             <ReviewCard></ReviewCard>
             <ReviewCard></ReviewCard>

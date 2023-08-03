@@ -77,3 +77,40 @@ position: relative;
    
     width: 200px;
 }
+
+
+.section5-button > span, svg {
+    z-index: 999;
+  }
+  
+  .section5-button::before {
+    content: "";
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    background-color: #e6c1a1;
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+    position: absolute;
+    border-radius: 15px;
+    left: 0;
+  }
+  
+  .section5-button:hover::before {
+    width: 100%;
+  }
+  .section5-button::after{
+      content: "";
+      width: 0;
+      height: 100%;
+      z-index: 99;
+      background-color: #6464df;
+      transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+      position: absolute;
+      border-radius: 15px;
+      left: 0;
+      transition-delay: 60ms;
+  }
+  
+  .section5-button:hover::after {
+      width: 100%;
+    }

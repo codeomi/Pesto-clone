@@ -5,15 +5,16 @@ import notepad from "../../assets/icons/notepad.webp";
 import vase from "../../assets/icons/vase.webp";
 import coffee from "../../assets/icons/coffee.webp";
 import { ArrowForward } from "@mui/icons-material";
+import AOS from 'aos';
 
 const Section1 = () => {
   return (
     <>
       <div className="section1">
-        <img className="section1-img headphone" src={headphone} alt="" />
-        <img className="section1-img notepad" src={notepad} alt="" />
-        <img className="section1-img vase" src={vase} alt="" />
-        <img className="section1-img coffee" src={coffee} alt="" />
+        <img data-aos="fade-right" className="section1-img headphone" src={headphone} alt="" />
+        <img data-aos="fade-left" className="section1-img notepad" src={notepad} alt="" />
+        <img data-aos="fade-up-right" className="section1-img vase" src={vase} alt="" />
+        <img  data-aos="fade-up-left" className="section1-img coffee" src={coffee} alt="" />
         <div className="section-heading-container-1">
           <div className="heading-1">
             Personalised coaching for developers to evolve in their tech careers

@@ -1,6 +1,10 @@
 import React from "react";
 import { ArrowForward } from "@mui/icons-material";
-import "./section7.scss"
+import "./section7.scss";
+import card1 from "../../assets/cards/first.webp";
+import card2 from "../../assets/cards/second.webp";
+import card3 from "../../assets/cards/third.webp";
+import { Carousel } from 'react-responsive-carousel';
 
 const Section7 = () => {
   return (
@@ -23,6 +27,19 @@ const Section7 = () => {
               <ArrowForward id="arrow-id"></ArrowForward>
             </div>
           </div>
+        </div>
+        <div className="s7-img-slider">
+          <Carousel showThumbs={false}  swipeable={true} autoPlay={true} interval={1500} stopOnHover={true}  infiniteLoop={true} centerMode={true}  centerSlidePercentage={30} showStatus={true} showIndicators={false} >
+          <img className="s7-img" src={card1} alt="" />
+          <img className="s7-img" src={card2} alt="" />
+          <img className="s7-img" src={card3} alt="" />
+          <img className="s7-img" src={card1} alt="" />
+          <img className="s7-img" src={card2} alt="" />
+          <img className="s7-img" src={card3} alt="" />
+          <img className="s7-img" src={card1} alt="" />
+          <img className="s7-img" src={card2} alt="" />
+          <img className="s7-img" src={card3} alt="" />
+          </Carousel>
         </div>
       </div>
     </>
