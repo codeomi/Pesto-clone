@@ -97,3 +97,49 @@
 
 }
 
+
+@media only screen and (max-width: 800px) {
+
+
+
+
+
+.section2-container-grid-container {
+
+  flex-direction: column;
+}
+
+.section2 {
+
+  padding-top: 127px;
+  padding-bottom: 12px;
+}
+
+.what-is-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+}
+
+.section2-heading-container {
+ 
+  width: 111%;
+}
+
+.section2-container {
+  
+  height: fit-content;
+}
+
+.section2-heading {
+
+  font-size: 24px;
+}
+
+.scroller {
+  display: none;
+}
+
+}
