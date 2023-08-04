@@ -18,155 +18,208 @@
   justify-content: space-around;
   align-items: flex-end;
 
-
   height: 530px;
 }
 
-.s6-c-1-2{
-    grid-row-gap: 9px;
-    border-right: 5px solid rgba(168,141,118,.5);
-    flex-direction: column;
-    align-items: flex-end;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 50px;
+.s6-c-1-2 {
+  grid-row-gap: 9px;
+  border-right: 5px solid rgba(168, 141, 118, 0.5);
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  display: flex;
+}
+
+.s6-c-1-2-1 {
+  color: #a88d76;
+  font-size: 22px;
+  font-weight: 600;
+  position: static;
+}
+
+.s6-c-1-2-2 {
+  opacity: 0.7;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.section6-container-2 {
+  width: 500px;
+  height: 530px;
+  background-color: #e5e0d7;
+  border-radius: 18px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.fee-card {
+  width: 250px;
+  height: 550px;
+  color: #e5e0d7;
+  background-color: #1f1e1d;
+  background-image: linear-gradient(transparent 26%, #1f1e1d 57%),
+    url(../../assets/img/fee-structure.webp);
+  background-position: 0 0, 50% -20%;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, 120%;
+  border: 10px solid #2e2d2b;
+  border-radius: 18px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 40px 40px 40px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.text-block-61 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.8em;
+  text-decoration: line-through;
+}
+
+.text-block-62 {
+  margin-top: -16px;
+  margin-bottom: -13px;
+  font-size: 52px;
+  font-weight: 550;
+  line-height: 1.8em;
+}
+
+.text-block-63 {
+  letter-spacing: -0.02px;
+  margin-bottom: 24px;
+  font-size: 17px;
+  line-height: 1.6em;
+}
+
+.text-block-64 {
+  opacity: 0.83;
+  font-size: 12px;
+}
+
+.section6-container-3 {
+  margin-left: auto;
+  padding-top: 100px;
+  padding-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.section6-heading {
+  @include heading2();
+}
+
+.section6-description {
+  @include heading-description2();
+  text-align: start;
+  margin-top: 20px;
+}
+
+.section6-button {
+  @include black-btn();
+  width: 200px;
+  margin-top: 50px;
+}
+
+.section6-button > span,
+svg {
+  z-index: 999;
+}
+
+.section6-button::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  z-index: 1;
+  background-color: #e6c1a1;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  position: absolute;
+  border-radius: 15px;
+  left: 0;
+}
+
+.section6-button:hover::before {
+  width: 100%;
+}
+.section6-button::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  z-index: 99;
+  background-color: #6464df;
+  transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+  position: absolute;
+  border-radius: 15px;
+  left: 0;
+  transition-delay: 60ms;
+}
+
+.section6-button:hover::after {
+  width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+  .section6 {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .section6-container {
     display: flex;
-}
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    max-width: 0;
+    width: 100%;
+    margin: auto;
+  }
 
-.s6-c-1-2-1{
-    color: #a88d76;
-    font-size: 22px;
-    font-weight: 600;
-    position: static;
-}
-
-.s6-c-1-2-2{
-    opacity: .7;
-    font-size: 14px;
-    font-weight: 500;
-}
+  .section6-container-1 {
+    display: none;
+  }
 
 
-.section6-container-2{
-    width: 500px;
-    height: 530px;
-    background-color: #e5e0d7;
-    border-radius: 18px;
+
+.section6-container-2 {
+    margin-top: 93px;
+  }
+  
+
+  .section6-container-3 {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: flex;
-}
+  }
 
-.fee-card{
-    width: 250px;
-    height: 550px;
-    color: #e5e0d7;
-    background-color: #1f1e1d;
-    background-image: linear-gradient(transparent 26%,#1f1e1d 57%),url(../../assets/img/fee-structure.webp);
-    background-position: 0 0,50% -20%;
-    background-repeat: repeat,no-repeat;
-    background-size: auto,120%;
-    border: 10px solid #2e2d2b;
-    border-radius: 18px;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding: 40px 40px 40px;
-    display: flex;
-    position: relative;
-    overflow: hidden;
-}
-
-.text-block-61{
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 1.8em;
-    text-decoration: line-through;
-}
-
-.text-block-62{
-    margin-top: -16px;
-    margin-bottom: -13px;
-    font-size: 52px;
-    font-weight: 550;
-    line-height: 1.8em;
-}
-
-.text-block-63{
-    letter-spacing: -.02px;
-    margin-bottom: 24px;
-    font-size: 17px;
-    line-height: 1.6em;
-}
-
-.text-block-64{
-    opacity: .83;
-    font-size: 12px;
-}
-
-.section6-container-3{
-    margin-left: auto;
-    padding-top: 100px;
-    padding-left: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: flex-start
-    
-    
-}
-
-.section6-heading{
+  .section6-heading {
     @include heading2();
-}
+    font-size: 24px;
+  }
 
-.section6-description{
+  .section6-description {
     @include heading-description2();
-    text-align: start;
+    text-align: center;
     margin-top: 20px;
-}
+    font-weight: 600;
+  }
 
-.section6-button{
+  .section6-button {
     @include black-btn();
-    width: 200px;
-    margin-top: 50px;
+    width: 150px;
+    margin-top: 30px;
+  }
 }
-
-
-.section6-button > span, svg {
-    z-index: 999;
-  }
-  
-  .section6-button::before {
-    content: "";
-    width: 0;
-    height: 100%;
-    z-index: 1;
-    background-color: #e6c1a1;
-    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-    position: absolute;
-    border-radius: 15px;
-    left: 0;
-  }
-  
-  .section6-button:hover::before {
-    width: 100%;
-  }
-  .section6-button::after{
-      content: "";
-      width: 0;
-      height: 100%;
-      z-index: 99;
-      background-color: #6464df;
-      transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-      position: absolute;
-      border-radius: 15px;
-      left: 0;
-      transition-delay: 60ms;
-  }
-  
-  .section6-button:hover::after {
-      width: 100%;
-    }
