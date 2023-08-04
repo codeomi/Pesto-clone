@@ -62,3 +62,13 @@ $hoves-font: TT-Hoves-Trial-Medium, sans-serif;
   overflow: hidden;
 
 }
+
+@mixin mobile-heading(){
+  letter-spacing: -0.01em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $itc-font;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2em;
+}
