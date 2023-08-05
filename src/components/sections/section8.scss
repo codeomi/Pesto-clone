@@ -79,3 +79,40 @@ position: absolute;
 z-index: 999;
 right: -10px;
   }
+  .mobile-view{
+      display: none;
+  }
+
+  @media only screen and (max-width: 800px) {
+
+    .desktop-view{
+        display: none;
+    }
+
+.mobile-view{
+    display: block;
+}
+
+.section8-container {
+    /* padding: 100px 96px 180px; */
+    /* width: 90%; */
+    /* max-width: 1280px; */
+    padding: 75px 0 0;
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  .section8 {
+    /* width: 100vw; */
+    width: 100%;
+  }
+
+  .section8-heading{
+    @include heading2();
+margin: auto;
+width: 100%;
+font-size: 28px;
+}
+  
+
+  }

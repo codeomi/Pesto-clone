@@ -4,9 +4,10 @@ import "./section7.scss";
 import card1 from "../../assets/cards/first.webp";
 import card2 from "../../assets/cards/second.webp";
 import card3 from "../../assets/cards/third.webp";
-import { Carousel } from 'react-responsive-carousel';
+import { Carousel } from "react-responsive-carousel";
 
 const Section7 = () => {
+  const isMobile = window.innerWidth <= 800;
   return (
     <>
       <div className="section7">
@@ -28,19 +29,63 @@ const Section7 = () => {
             </div>
           </div>
         </div>
-        <div className="s7-img-slider">
-          <Carousel showThumbs={false}  swipeable={true} autoPlay={true} interval={1500} stopOnHover={true}  infiniteLoop={true} centerMode={true}  centerSlidePercentage={30} showStatus={true} showIndicators={false} >
-          <img className="s7-img" src={card1} alt="" />
-          <img className="s7-img" src={card2} alt="" />
-          <img className="s7-img" src={card3} alt="" />
-          <img className="s7-img" src={card1} alt="" />
-          <img className="s7-img" src={card2} alt="" />
-          <img className="s7-img" src={card3} alt="" />
-          <img className="s7-img" src={card1} alt="" />
-          <img className="s7-img" src={card2} alt="" />
-          <img className="s7-img" src={card3} alt="" />
-          </Carousel>
-        </div>
+        {isMobile ? (
+          <>
+            {" "}
+            <div className="s7-img-slider">
+              <Carousel
+                className="s7-carousal-component"
+                showThumbs={false}
+                swipeable={true}
+                autoPlay={true}
+                interval={1500}
+                stopOnHover={true}
+                infiniteLoop={true}
+                centerMode={true}
+                centerSlidePercentage={30}
+                showStatus={true}
+                showIndicators={false}
+              >
+                <img className="s7-img" src={card1} alt="" />
+                <img className="s7-img" src={card2} alt="" />
+                <img className="s7-img" src={card3} alt="" />
+                <img className="s7-img" src={card1} alt="" />
+                <img className="s7-img" src={card2} alt="" />
+                <img className="s7-img" src={card3} alt="" />
+                <img className="s7-img" src={card1} alt="" />
+                <img className="s7-img" src={card2} alt="" />
+                <img className="s7-img" src={card3} alt="" />
+              </Carousel>
+            </div>
+          </>
+        ) : (
+          <div className="s7-img-slider">
+            <Carousel
+              className="s7-carousal-component"
+              showThumbs={false}
+              swipeable={true}
+              autoPlay={true}
+              interval={1500}
+              stopOnHover={true}
+              infiniteLoop={true}
+              centerMode={true}
+              centerSlidePercentage={30}
+              showStatus={true}
+              showIndicators={false}
+            >
+              <img className="s7-img" src={card1} alt="" />
+              <img className="s7-img" src={card2} alt="" />
+              <img className="s7-img" src={card3} alt="" />
+              <img className="s7-img" src={card1} alt="" />
+              <img className="s7-img" src={card2} alt="" />
+              <img className="s7-img" src={card3} alt="" />
+              <img className="s7-img" src={card1} alt="" />
+              <img className="s7-img" src={card2} alt="" />
+              <img className="s7-img" src={card3} alt="" />
+            </Carousel>
+          </div>
+        )}
+       
       </div>
     </>
   );

@@ -139,3 +139,59 @@ margin:100px 20px;
   color: rgba(65, 50, 37, 0.439);
   overflow: hidden;
 }
+
+
+@media only screen and (max-width: 800px) {
+
+
+
+  .section4-card {
+ 
+    width: 300px;
+    height: 436px;
+    margin: 46px 8px;
+  }
+  
+  .section4-card-description-container{
+    width: 286px;
+    flex-wrap: wrap;
+  }
+
+  .bullet-circle {
+
+    width: 12px;
+    height: 12px;
+  }
+  
+  .bullet-point {
+
+    width: 13px;
+    height: 13px;
+    background-color: #f7e6caba;
+    border-radius: 12px;
+    opacity: 1;
+  }
+
+  .bullet-point-container {
+    width: 285px;
+    font-size: 13px;
+  }
+
+  
+  .line-container {
+    margin-right: -16px;
+  }
+  
+  .bullet-point-description {
+    font-size: 13px;
+  }
+  
+  div.carousel-arrow:nth-child(3) {
+    display: none;
+  }
+  
+  
+  div.carousel-arrow:nth-child(1) {
+    display: none;
+  }
+}
