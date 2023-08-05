@@ -16,7 +16,15 @@ const Section8 = () => {
               Stories - From the next-gen <br /> developers of the world
             </div>
           </div>
-          <div className="section8-card-wrapper">
+          <div className="section8-card-wrapper mobile-view">
+          <Carousel height={50} showThumbs={true} swipeable={true} autoPlay={false} interval={2000} useKeyboardArrows={true} showArrows={true} infiniteLoop={true} centerMode={true} autoFocus={true}  centerSlidePercentage={100} showStatus={false}  >
+            <ReviewCard></ReviewCard>
+            <ReviewCard></ReviewCard>
+            <ReviewCard></ReviewCard>
+            <ReviewCard></ReviewCard>
+            </Carousel>
+          </div>
+          <div className="section8-card-wrapper desktop-view">
             <div className="s8-blur-left"></div>
             <div className="s8-blur-right"></div>
           <Carousel height={50} showThumbs={true} swipeable={true} autoPlay={true} interval={2000} useKeyboardArrows={true} showArrows={true} infiniteLoop={true} centerMode={true} autoFocus={true} centerSlidePercentage={40} showStatus={false}  >

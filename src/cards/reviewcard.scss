@@ -118,3 +118,22 @@
     left: 50px;
     right: auto;
 }
+
+@media only screen and (max-width: 800px) {
+
+    
+.review-card {
+    width: 500px;
+    height: 100%;
+    margin-right: 300px;
+
+
+  }
+
+  .review-container {
+   
+    width: 77%;
+    padding: 10px 16px 24px;
+  }
+  
+}
