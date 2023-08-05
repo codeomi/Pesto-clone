@@ -86,3 +86,40 @@
     margin-right: 10vw;
     max-height: 500px;
   }
+
+
+  @media only screen and (max-width: 800px) {
+    .section7 {
+      padding-top: 90px;
+      padding-bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .section7-container {
+      max-width: 0;
+      width: 100%;
+    }
+
+    .section7-heading-2 {
+      @include heading2();
+      font-size: 24px;
+      width: 337px;
+      margin: auto;
+    }
+
+    .section7-description {
+      @include heading-description2();
+      width: 349px;
+      margin: 23px 0;
+      text-align: center;
+    }
+    
+    // .s7-carousal-component{
+    //   // display: none;
+    // }
+    
+
+  }
