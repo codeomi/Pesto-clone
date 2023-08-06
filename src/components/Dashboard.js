@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./dashboard.scss";
 import Section1 from "./sections/Section1";
 import Section2 from "./sections/Section2.js";
@@ -9,8 +9,15 @@ import Section6 from "./sections/Section6.js";
 import Section7 from "./sections/Section7.js";
 import Section8 from "./sections/Section8.js";
 import Section9 from "./sections/Section9.js";
+import { useLocation } from "react-router-dom";
 
 function Dashboard() {
+
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
   return (
     <>
       <div className="dashboard">
