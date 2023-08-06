@@ -84,6 +84,11 @@
 
 @media only screen and (max-width: 800px) {
 
+
+  .section4{
+    width: 100%;
+  }
+
   .heading2 {
     font-size: 24px;
   }
@@ -105,7 +110,9 @@
   .section4-1 {
     display: none;
   }
-
+  .carousel-section {
+    overflow-x: hidden;
+  }
 
   .carousal-heading {
     width: 118px;

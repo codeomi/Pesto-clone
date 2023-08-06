@@ -169,5 +169,19 @@ svg {
     height: 100px;
     margin: auto;
     background-color: #5e5043;
+    position: relative;
   }
+
+
+  // #account-menu{
+  //   background-color: #6464df;
+  //   position: absolute;
+  //   right: -50px;
+  //   width: 100%;
+  // }
+
+  .MuiMenu-paper{
+    background-color: #6464df;
+  }
+
 }

@@ -2,15 +2,23 @@ import { ArrowForward } from "@mui/icons-material";
 import React, { useEffect, useState } from "react";
 import "./navbar.scss";
 import pestoLogo from "../../assets/img/images.png";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import ListItemIcon from "@mui/material/ListItemIcon";
+import Divider from "@mui/material/Divider";
+import IconButton from "@mui/material/IconButton";
+import { SwipeableDrawer } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { MenuItem, SwipeableDrawer } from "@mui/material";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
-  console.log(open);
-  useEffect(() => {
-    console.log("clicked the btn" + open);
-  }, [open]);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
   return (
     <>
       <div className="navbar">
@@ -25,21 +33,28 @@ const Navbar = () => {
           </div>
           <div className="navbar-btn">
             <span>Get Started</span>
-            <ArrowForward
-              onClick={() => setOpen(true)}
-              id="arrow-id"
-            ></ArrowForward>
+            <ArrowForward id="arrow-id"></ArrowForward>
           </div>
           <div className="menu-icon-container">
-            <MenuIcon></MenuIcon>
-            <SwipeableDrawer
-              anchor={"right"}
+            <MenuIcon onClick={handleClick}></MenuIcon>
+{/* 
+            <Menu
+              id="basic-menu"
+              anchorEl={anchorEl}
               open={open}
-              // onClose={toggleDrawer(anchor, false)}
-              // onOpen={toggleDrawer(anchor, true)}
+              onClose={handleClose}
+              MenuListProps={{
+                "aria-labelledby": "basic-button",
+              }}
+              anchorOrigin={{
+                vertical: "bottom",
+                horizontal: "left",
+              }}
             >
-              <div className="">Profile</div>
-            </SwipeableDrawer>
+              <MenuItem>Profile</MenuItem>
+              <Divider></Divider>
+              <MenuItem>About</MenuItem>
+            </Menu> */}
           </div>
         </div>
       </div>
